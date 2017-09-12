@@ -25,7 +25,7 @@ p_imputation_1 <-
        title = "Comparison of Mean Squared Error by Imputation Strategy", 
        subtitle = "For human-prior variables with no ranking information")
   
-ggsave(filename = file.path(output, "p_imputation_1.png"), 
+ggsave(filename = file.path("output", "p_imputation_1.png"), 
        plot = p_imputation_1, 
        height = 5, width = 8)
 
