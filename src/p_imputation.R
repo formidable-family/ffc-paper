@@ -6,6 +6,7 @@ scores <- read_csv(file.path("data", "ffc_models_leaderboard_scores.csv"))
 
 scores <- 
   scores %>%
+  filter(model != "baseline") %>%
   mutate(data = as_factor(data))
 
 p_imputation_1 <- 

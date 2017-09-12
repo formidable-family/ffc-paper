@@ -20,3 +20,4 @@ glmnet,mturk,human priors,untyped OLS regression imputation,lasso_regression_imp
 glmnet,mturk,human priors,typed OLS regression imputation,lasso_regression_imputation_lm_mturkers,28,lasso_regression_imputation_lm_mturkers.zip,0.37507,0.21967,0.02691,0.05277,0.17304,0.19795
 glmnet,mturk,human priors,typed LASSO regression imputation,lasso_regression_imputation_lasso_mturkers,38,lasso_regression_imputation_lasso_mturkers.zip,0.3856,0.22023,0.02883,0.05341,0.17405,0.20174
 glmnet,mturk,human priors,amelia,lasso_amelia_imputation_mturkers,32,lasso_amelia_imputation_mturkers.zip,0.38584,0.21789,0.02692,0.05279,0.17234,0.1973
+baseline,NA,NA,NA,NA,NA,NA,0.39273,0.21997,0.0288,0.05341,0.17435,0.20224
