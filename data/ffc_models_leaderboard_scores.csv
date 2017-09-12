@@ -1,0 +1,22 @@
+model,scores,variables,data,model name,FF submission no,name of submission zip,gpa,grit,material hardship,eviction,layoff,job training
+glmnet,none,all,mean imputation,lasso_mean_imputation_all_covariates,36,lasso_mean_imputation_all_covariates.zip,0.37283,0.21909,0.02505,0.05297,0.17447,0.20036
+glmnet,none,all,typed OLS regression imputation,lasso_lm_imputation_all_covariates,29,lasso_lm_imputation_all_covariates.zip,0.37042,0.21616,0.02471,0.0526,0.17363,0.20054
+glmnet,none,all,typed LASSO regression imputation,lasso_lasso_imputation_all_covariates,41,lasso_lasso_imputation_all_covariates.zip,0.37377,0.21885,0.02501,0.05207,0.17435,0.20337
+glmnet,none,constructed,amelia,lasso_amelia_imputation_constructed,33,lasso_amelia_imputation_constructed.zip,0.3825,0.2212,0.02693,0.05273,0.17149,0.20063
+glmnet,none,constructed,typed OLS regression imputation,lasso_lm_imputation_constructed_covariates,34,lasso_lm_imputation_constructed_covariates.zip,0.38286,0.22372,0.027,0.05341,0.172,0.20259
+glmnet,none,constructed,typed LASSO regression imputation,lasso_lasso_imputation_constructed_covariates,35,lasso_lasso_imputation_constructed_covariates.zip,0.38069,0.2169,0.02758,0.05341,0.17284,0.20219
+glmnet,none,human priors,mean imputation,lasso_mean_imputation,23,lasso_mean_imputation.zip,0.37244,0.21893,0.02681,0.05304,0.17275,0.19995
+glmnet,none,human priors,untyped OLS regression imputation,lasso_regression_imputation,19,lasso_regression_imputation.zip,0.38022,0.22137,0.02717,0.05336,0.1731,0.1988
+glmnet,none,human priors,typed OLS regression imputation,lasso_regression_imputation_lm,26,lasso_regression_imputation_lm.zip,0.37296,0.21894,0.0269,0.05298,0.173,0.19915
+glmnet,none,human priors,typed LASSO regression imputation,lasso_regression_imputation_lasso,39,lasso_regression_imputation_lasso.zip,0.38373,0.21847,0.02829,0.05334,0.17394,0.20182
+glmnet,none,human priors,amelia,lasso_amelia_imputation,30,lasso_amelia_imputation.zip,0.38268,0.2181,0.02684,0.05267,0.17226,0.19731
+glmnet,expert,human priors,mean imputation,lasso_mean_imputation_experts,24,lasso_mean_imputation_experts.zip,0.37434,0.22196,0.02696,0.05308,0.1719,0.19794
+glmnet,expert,human priors,untyped OLS regression imputation,lasso_regression_imputation_experts,21,lasso_regression_imputation_experts.zip,0.39134,0.22498,0.02733,0.05313,0.17137,0.198
+glmnet,expert,human priors,typed OLS regression imputation,lasso_regression_imputation_lm_experts,27,lasso_regression_imputation_lm_experts.zip,0.37551,0.222,0.02708,0.05318,0.17339,0.19709
+glmnet,expert,human priors,typed LASSO regression imputation,lasso_regression_imputation_lasso_experts,37,lasso_regression_imputation_lasso_experts.zip,0.38802,0.221,0.02881,0.05341,0.17435,0.20145
+glmnet,expert,human priors,amelia,lasso_amelia_imputation_experts,31,lasso_amelia_imputation_experts.zip,0.38564,0.2205,0.02705,0.05288,0.17172,0.19646
+glmnet,mturk,human priors,mean imputation,lasso_mean_imputation_mturkers,25,lasso_mean_imputation_mturkers.zip,0.37624,0.21904,0.02692,0.05276,0.1725,0.19958
+glmnet,mturk,human priors,untyped OLS regression imputation,lasso_regression_imputation_mturkers,22,lasso_regression_imputation_mturkers.zip,0.37968,0.22269,0.02735,0.05341,0.17291,0.19913
+glmnet,mturk,human priors,typed OLS regression imputation,lasso_regression_imputation_lm_mturkers,28,lasso_regression_imputation_lm_mturkers.zip,0.37507,0.21967,0.02691,0.05277,0.17304,0.19795
+glmnet,mturk,human priors,typed LASSO regression imputation,lasso_regression_imputation_lasso_mturkers,38,lasso_regression_imputation_lasso_mturkers.zip,0.3856,0.22023,0.02883,0.05341,0.17405,0.20174
+glmnet,mturk,human priors,amelia,lasso_amelia_imputation_mturkers,32,lasso_amelia_imputation_mturkers.zip,0.38584,0.21789,0.02692,0.05279,0.17234,0.1973
