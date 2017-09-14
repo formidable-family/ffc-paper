@@ -115,6 +115,7 @@ scores_long %>%
 
 p_imp_baseline <- 
   scores_long %>%
+  mutate(data = fct_relevel(data, "mean imputation", "untyped OLS regression imputation")) %>%
   ggplot(aes(x = fct_rev(vars_and_scores), y = rel_mse, color = fct_rev(data))) + 
   facet_wrap(~ outcome, ncol = 2, scales = "free_x", dir = "v") +
   geom_hline(yintercept = 0) +
