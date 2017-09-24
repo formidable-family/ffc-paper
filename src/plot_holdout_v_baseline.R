@@ -63,6 +63,9 @@ scores_long <-
   mutate(outcome = as_factor(outcome), 
          rel_mse = mse - baseline) 
 
+write_csv(scores, "data/holdout_scores_wide.csv")
+write_csv(scores_long, "data/holdout_scores_long.csv")
+
 scores_long %>%
   filter(variables == "human priors") %>%
   ggplot(aes(x = fct_rev(outcome), y = rel_mse, fill = fct_rev(data))) + 

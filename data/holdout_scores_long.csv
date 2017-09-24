@@ -1,0 +1,127 @@
+name,model,scores,variables,vars_and_scores,data,outcome,mse,baseline,rel_mse
+lasso_mean_imputation_all_covariates,glmnet,none,all,all,mean imputation,gpa,0.352117188438423,0.425148881,-0.07303169256157699
+lasso_lm_imputation_all_covariates,glmnet,none,all,all,typed OLS regression imputation,gpa,0.355144949405563,0.425148881,-0.07000393159443696
+lasso_lasso_imputation_all_covariates,glmnet,none,all,all,typed LASSO regression imputation,gpa,0.358682323023637,0.425148881,-0.06646655797636297
+lasso_amelia_imputation_constructed,glmnet,none,constructed,constructed,amelia,gpa,0.376087563184176,0.425148881,-0.04906131781582396
+lasso_lm_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed OLS regression imputation,gpa,0.376356597040161,0.425148881,-0.04879228395983898
+lasso_lasso_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed LASSO regression imputation,gpa,0.380283513654673,0.425148881,-0.04486536734532698
+lasso_mean_imputation,glmnet,none,human priors,human priors,mean imputation,gpa,0.365806938944687,0.425148881,-0.05934194205531296
+lasso_regression_imputation,glmnet,none,human priors,human priors,untyped OLS regression imputation,gpa,0.371777049574454,0.425148881,-0.05337183142554597
+lasso_regression_imputation_lm,glmnet,none,human priors,human priors,typed OLS regression imputation,gpa,0.363865382308392,0.425148881,-0.061283498691607985
+lasso_regression_imputation_lasso,glmnet,none,human priors,human priors,typed LASSO regression imputation,gpa,0.372135907190784,0.425148881,-0.05301297380921599
+lasso_amelia_imputation,glmnet,none,human priors,human priors,amelia,gpa,0.364483467524725,0.425148881,-0.06066541347527499
+lasso_mean_imputation_experts,glmnet,expert,human priors,hp + expert scores,mean imputation,gpa,0.365978504710144,0.425148881,-0.059170376289856
+lasso_regression_imputation_experts,glmnet,expert,human priors,hp + expert scores,untyped OLS regression imputation,gpa,0.373381713075348,0.425148881,-0.05176716792465197
+lasso_regression_imputation_lm_experts,glmnet,expert,human priors,hp + expert scores,typed OLS regression imputation,gpa,0.363254667656955,0.425148881,-0.06189421334304496
+lasso_regression_imputation_lasso_experts,glmnet,expert,human priors,hp + expert scores,typed LASSO regression imputation,gpa,0.377949110676211,0.425148881,-0.04719977032378897
+lasso_amelia_imputation_experts,glmnet,expert,human priors,hp + expert scores,amelia,gpa,0.364178123289447,0.425148881,-0.06097075771055299
+lasso_mean_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,mean imputation,gpa,0.370843346650767,0.425148881,-0.054305534349232965
+lasso_regression_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,untyped OLS regression imputation,gpa,0.38042943462787,0.425148881,-0.04471944637212999
+lasso_regression_imputation_lm_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed OLS regression imputation,gpa,0.364391422544394,0.425148881,-0.060757458455605984
+lasso_regression_imputation_lasso_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed LASSO regression imputation,gpa,0.372858440469647,0.425148881,-0.05229044053035298
+lasso_amelia_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,amelia,gpa,0.369968516713462,0.425148881,-0.055180364286538
+lasso_mean_imputation_all_covariates,glmnet,none,all,all,mean imputation,grit,0.24712371337643,0.252983596,-0.005859882623569984
+lasso_lm_imputation_all_covariates,glmnet,none,all,all,typed OLS regression imputation,grit,0.244534209782959,0.252983596,-0.008449386217040972
+lasso_lasso_imputation_all_covariates,glmnet,none,all,all,typed LASSO regression imputation,grit,0.245333622707081,0.252983596,-0.007649973292918971
+lasso_amelia_imputation_constructed,glmnet,none,constructed,constructed,amelia,grit,0.248005015259893,0.252983596,-0.004978580740106986
+lasso_lm_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed OLS regression imputation,grit,0.249541749389596,0.252983596,-0.0034418466104039758
+lasso_lasso_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed LASSO regression imputation,grit,0.251605460902216,0.252983596,-0.0013781350977839502
+lasso_mean_imputation,glmnet,none,human priors,human priors,mean imputation,grit,0.250731231513524,0.252983596,-0.0022523644864759773
+lasso_regression_imputation,glmnet,none,human priors,human priors,untyped OLS regression imputation,grit,0.250428592825678,0.252983596,-0.0025550031743220014
+lasso_regression_imputation_lm,glmnet,none,human priors,human priors,typed OLS regression imputation,grit,0.250615839737073,0.252983596,-0.0023677562629269566
+lasso_regression_imputation_lasso,glmnet,none,human priors,human priors,typed LASSO regression imputation,grit,0.251675969067353,0.252983596,-0.0013076269326469658
+lasso_amelia_imputation,glmnet,none,human priors,human priors,amelia,grit,0.250613558012928,0.252983596,-0.0023700379870719712
+lasso_mean_imputation_experts,glmnet,expert,human priors,hp + expert scores,mean imputation,grit,0.253583664910494,0.252983596,6.000689104940227e-4
+lasso_regression_imputation_experts,glmnet,expert,human priors,hp + expert scores,untyped OLS regression imputation,grit,0.25333786094265,0.252983596,3.5426494265000663e-4
+lasso_regression_imputation_lm_experts,glmnet,expert,human priors,hp + expert scores,typed OLS regression imputation,grit,0.253086859422699,0.252983596,1.0326342269900701e-4
+lasso_regression_imputation_lasso_experts,glmnet,expert,human priors,hp + expert scores,typed LASSO regression imputation,grit,0.253338794774503,0.252983596,3.551987745030183e-4
+lasso_amelia_imputation_experts,glmnet,expert,human priors,hp + expert scores,amelia,grit,0.252201075681881,0.252983596,-7.825203181189844e-4
+lasso_mean_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,mean imputation,grit,0.250905707767399,0.252983596,-0.0020778882326009662
+lasso_regression_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,untyped OLS regression imputation,grit,0.250498555870787,0.252983596,-0.0024850401292129676
+lasso_regression_imputation_lm_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed OLS regression imputation,grit,0.250941488652882,0.252983596,-0.0020421073471179607
+lasso_regression_imputation_lasso_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed LASSO regression imputation,grit,0.253740268317187,0.252983596,7.566723171870127e-4
+lasso_amelia_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,amelia,grit,0.249798591566292,0.252983596,-0.0031850044337079775
+lasso_mean_imputation_all_covariates,glmnet,none,all,all,mean imputation,material hardship,0.0198636442465127,0.024905617,-0.0050419727534873025
+lasso_lm_imputation_all_covariates,glmnet,none,all,all,typed OLS regression imputation,material hardship,0.0199981734393895,0.024905617,-0.0049074435606105
+lasso_lasso_imputation_all_covariates,glmnet,none,all,all,typed LASSO regression imputation,material hardship,0.020328193898836,0.024905617,-0.004577423101164001
+lasso_amelia_imputation_constructed,glmnet,none,constructed,constructed,amelia,material hardship,0.0226894449087688,0.024905617,-0.002216172091231202
+lasso_lm_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed OLS regression imputation,material hardship,0.0228130075542413,0.024905617,-0.002092609445758703
+lasso_lasso_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed LASSO regression imputation,material hardship,0.0235546501841414,0.024905617,-0.0013509668158586015
+lasso_mean_imputation,glmnet,none,human priors,human priors,mean imputation,material hardship,0.0226893569549057,0.024905617,-0.002216260045094301
+lasso_regression_imputation,glmnet,none,human priors,human priors,untyped OLS regression imputation,material hardship,0.0230011776550202,0.024905617,-0.0019044393449798025
+lasso_regression_imputation_lm,glmnet,none,human priors,human priors,typed OLS regression imputation,material hardship,0.0226242859548361,0.024905617,-0.0022813310451639014
+lasso_regression_imputation_lasso,glmnet,none,human priors,human priors,typed LASSO regression imputation,material hardship,0.0240665764765625,0.024905617,-8.390405234375009e-4
+lasso_amelia_imputation,glmnet,none,human priors,human priors,amelia,material hardship,0.0225286475887999,0.024905617,-0.0023769694112001014
+lasso_mean_imputation_experts,glmnet,expert,human priors,hp + expert scores,mean imputation,material hardship,0.0226821731280685,0.024905617,-0.0022234438719315013
+lasso_regression_imputation_experts,glmnet,expert,human priors,hp + expert scores,untyped OLS regression imputation,material hardship,0.0230770667389707,0.024905617,-0.0018285502610293006
+lasso_regression_imputation_lm_experts,glmnet,expert,human priors,hp + expert scores,typed OLS regression imputation,material hardship,0.0226252664873638,0.024905617,-0.0022803505126362013
+lasso_regression_imputation_lasso_experts,glmnet,expert,human priors,hp + expert scores,typed LASSO regression imputation,material hardship,0.0249060425404876,0.024905617,4.2554048759746443e-7
+lasso_amelia_imputation_experts,glmnet,expert,human priors,hp + expert scores,amelia,material hardship,0.0226423522212458,0.024905617,-0.002263264778754201
+lasso_mean_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,mean imputation,material hardship,0.0228177830884409,0.024905617,-0.0020878339115590998
+lasso_regression_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,untyped OLS regression imputation,material hardship,0.0231549662504103,0.024905617,-0.0017506507495897022
+lasso_regression_imputation_lm_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed OLS regression imputation,material hardship,0.02263739339875,0.024905617,-0.002268223601250001
+lasso_regression_imputation_lasso_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed LASSO regression imputation,material hardship,0.0247858879363387,0.024905617,-1.197290636613009e-4
+lasso_amelia_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,amelia,material hardship,0.0225917950991115,0.024905617,-0.0023138219008885
+lasso_mean_imputation_all_covariates,glmnet,none,all,all,mean imputation,eviction,0.0547872082283367,0.055457913,-6.707047716632969e-4
+lasso_lm_imputation_all_covariates,glmnet,none,all,all,typed OLS regression imputation,eviction,0.0545357799448022,0.055457913,-9.221330551977963e-4
+lasso_lasso_imputation_all_covariates,glmnet,none,all,all,typed LASSO regression imputation,eviction,0.0543498501242274,0.055457913,-0.0011080628757726002
+lasso_amelia_imputation_constructed,glmnet,none,constructed,constructed,amelia,eviction,0.0547500844696597,0.055457913,-7.078285303403001e-4
+lasso_lm_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed OLS regression imputation,eviction,0.0554579126208854,0.055457913,-3.791146008236268e-10
+lasso_lasso_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed LASSO regression imputation,eviction,0.0554579126208854,0.055457913,-3.791146008236268e-10
+lasso_mean_imputation,glmnet,none,human priors,human priors,mean imputation,eviction,0.0550371518138704,0.055457913,-4.207611861295965e-4
+lasso_regression_imputation,glmnet,none,human priors,human priors,untyped OLS regression imputation,eviction,0.0554177776732543,0.055457913,-4.013532674569664e-5
+lasso_regression_imputation_lm,glmnet,none,human priors,human priors,typed OLS regression imputation,eviction,0.0549217667816048,0.055457913,-5.36146218395199e-4
+lasso_regression_imputation_lasso,glmnet,none,human priors,human priors,typed LASSO regression imputation,eviction,0.0553979607524604,0.055457913,-5.9952247539594994e-5
+lasso_amelia_imputation,glmnet,none,human priors,human priors,amelia,eviction,0.0547312816501804,0.055457913,-7.266313498195953e-4
+lasso_mean_imputation_experts,glmnet,expert,human priors,hp + expert scores,mean imputation,eviction,0.0550357308202914,0.055457913,-4.2218217970859534e-4
+lasso_regression_imputation_experts,glmnet,expert,human priors,hp + expert scores,untyped OLS regression imputation,eviction,0.0550177434414914,0.055457913,-4.401695585085977e-4
+lasso_regression_imputation_lm_experts,glmnet,expert,human priors,hp + expert scores,typed OLS regression imputation,eviction,0.0549201015018376,0.055457913,-5.378114981623994e-4
+lasso_regression_imputation_lasso_experts,glmnet,expert,human priors,hp + expert scores,typed LASSO regression imputation,eviction,0.0554579126208854,0.055457913,-3.791146008236268e-10
+lasso_amelia_imputation_experts,glmnet,expert,human priors,hp + expert scores,amelia,eviction,0.054495515701149,0.055457913,-9.623972988509963e-4
+lasso_mean_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,mean imputation,eviction,0.0548276094425237,0.055457913,-6.303035574763e-4
+lasso_regression_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,untyped OLS regression imputation,eviction,0.0554579126208854,0.055457913,-3.791146008236268e-10
+lasso_regression_imputation_lm_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed OLS regression imputation,eviction,0.0546757299600481,0.055457913,-7.821830399518948e-4
+lasso_regression_imputation_lasso_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed LASSO regression imputation,eviction,0.0554579126208854,0.055457913,-3.791146008236268e-10
+lasso_amelia_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,amelia,eviction,0.054685729657842,0.055457913,-7.72183342157999e-4
+lasso_mean_imputation_all_covariates,glmnet,none,all,all,mean imputation,layoff,0.164846420270151,0.167223718,-0.0023772977298489872
+lasso_lm_imputation_all_covariates,glmnet,none,all,all,typed OLS regression imputation,layoff,0.165368736466739,0.167223718,-0.0018549815332609965
+lasso_lasso_imputation_all_covariates,glmnet,none,all,all,typed LASSO regression imputation,layoff,0.167223717980357,0.167223718,-1.9642981685663585e-11
+lasso_amelia_imputation_constructed,glmnet,none,constructed,constructed,amelia,layoff,0.162732046827983,0.167223718,-0.004491671172016987
+lasso_lm_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed OLS regression imputation,layoff,0.163542401330432,0.167223718,-0.003681316669568002
+lasso_lasso_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed LASSO regression imputation,layoff,0.166160199552478,0.167223718,-0.001063518447522005
+lasso_mean_imputation,glmnet,none,human priors,human priors,mean imputation,layoff,0.164965899059915,0.167223718,-0.0022578189400850046
+lasso_regression_imputation,glmnet,none,human priors,human priors,untyped OLS regression imputation,layoff,0.165794871546371,0.167223718,-0.0014288464536290069
+lasso_regression_imputation_lm,glmnet,none,human priors,human priors,typed OLS regression imputation,layoff,0.164633618549458,0.167223718,-0.002590099450542005
+lasso_regression_imputation_lasso,glmnet,none,human priors,human priors,typed LASSO regression imputation,layoff,0.16676294055369,0.167223718,-4.607774463099845e-4
+lasso_amelia_imputation,glmnet,none,human priors,human priors,amelia,layoff,0.164425927327078,0.167223718,-0.0027977906729219904
+lasso_mean_imputation_experts,glmnet,expert,human priors,hp + expert scores,mean imputation,layoff,0.164263546108998,0.167223718,-0.002960171891002006
+lasso_regression_imputation_experts,glmnet,expert,human priors,hp + expert scores,untyped OLS regression imputation,layoff,0.164166604196161,0.167223718,-0.0030571138038389956
+lasso_regression_imputation_lm_experts,glmnet,expert,human priors,hp + expert scores,typed OLS regression imputation,layoff,0.164897658458857,0.167223718,-0.002326059541142983
+lasso_regression_imputation_lasso_experts,glmnet,expert,human priors,hp + expert scores,typed LASSO regression imputation,layoff,0.167223717980357,0.167223718,-1.9642981685663585e-11
+lasso_amelia_imputation_experts,glmnet,expert,human priors,hp + expert scores,amelia,layoff,0.163678840371644,0.167223718,-0.00354487762835598
+lasso_mean_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,mean imputation,layoff,0.164592649897281,0.167223718,-0.0026310681027189864
+lasso_regression_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,untyped OLS regression imputation,layoff,0.165614365116293,0.167223718,-0.0016093528837070048
+lasso_regression_imputation_lm_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed OLS regression imputation,layoff,0.164286076610741,0.167223718,-0.0029376413892590048
+lasso_regression_imputation_lasso_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed LASSO regression imputation,layoff,0.167000895313786,0.167223718,-2.2282268621398593e-4
+lasso_amelia_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,amelia,layoff,0.164282006546429,0.167223718,-0.002941711453571
+lasso_mean_imputation_all_covariates,glmnet,none,all,all,mean imputation,job training,0.177331364569118,0.185329492,-0.007998127430882018
+lasso_lm_imputation_all_covariates,glmnet,none,all,all,typed OLS regression imputation,job training,0.177887719259034,0.185329492,-0.007441772740966024
+lasso_lasso_imputation_all_covariates,glmnet,none,all,all,typed LASSO regression imputation,job training,0.179473130901925,0.185329492,-0.005856361098075025
+lasso_amelia_imputation_constructed,glmnet,none,constructed,constructed,amelia,job training,0.182571817735481,0.185329492,-0.0027576742645190055
+lasso_lm_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed OLS regression imputation,job training,0.181754478164872,0.185329492,-0.0035750138351280103
+lasso_lasso_imputation_constructed_covariates,glmnet,none,constructed,constructed,typed LASSO regression imputation,job training,0.184009892986673,0.185329492,-0.0013195990133270108
+lasso_mean_imputation,glmnet,none,human priors,human priors,mean imputation,job training,0.184563964477314,0.185329492,-7.655275226860214e-4
+lasso_regression_imputation,glmnet,none,human priors,human priors,untyped OLS regression imputation,job training,0.183366169612558,0.185329492,-0.0019633223874420125
+lasso_regression_imputation_lm,glmnet,none,human priors,human priors,typed OLS regression imputation,job training,0.185088532607811,0.185329492,-2.409593921890163e-4
+lasso_regression_imputation_lasso,glmnet,none,human priors,human priors,typed LASSO regression imputation,job training,0.18315149927923,0.185329492,-0.0021779927207700167
+lasso_amelia_imputation,glmnet,none,human priors,human priors,amelia,job training,0.182694171007631,0.185329492,-0.002635320992369017
+lasso_mean_imputation_experts,glmnet,expert,human priors,hp + expert scores,mean imputation,job training,0.182539114670283,0.185329492,-0.0027903773297170142
+lasso_regression_imputation_experts,glmnet,expert,human priors,hp + expert scores,untyped OLS regression imputation,job training,0.182221980046972,0.185329492,-0.003107511953028025
+lasso_regression_imputation_lm_experts,glmnet,expert,human priors,hp + expert scores,typed OLS regression imputation,job training,0.182433012899849,0.185329492,-0.002896479100151006
+lasso_regression_imputation_lasso_experts,glmnet,expert,human priors,hp + expert scores,typed LASSO regression imputation,job training,0.182461106918456,0.185329492,-0.0028683850815440226
+lasso_amelia_imputation_experts,glmnet,expert,human priors,hp + expert scores,amelia,job training,0.181680240923373,0.185329492,-0.0036492510766270025
+lasso_mean_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,mean imputation,job training,0.183811489086631,0.185329492,-0.0015180029133690098
+lasso_regression_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,untyped OLS regression imputation,job training,0.181976882434166,0.185329492,-0.003352609565834025
+lasso_regression_imputation_lm_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed OLS regression imputation,job training,0.183056719695903,0.185329492,-0.002272772304097004
+lasso_regression_imputation_lasso_mturkers,glmnet,mturk,human priors,hp + mturk scores,typed LASSO regression imputation,job training,0.182174874758435,0.185329492,-0.0031546172415650164
+lasso_amelia_imputation_mturkers,glmnet,mturk,human priors,hp + mturk scores,amelia,job training,0.181305490996327,0.185329492,-0.004024001003673006
