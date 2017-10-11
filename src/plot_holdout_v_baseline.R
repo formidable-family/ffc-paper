@@ -66,6 +66,10 @@ scores_long <-
 write_csv(scores, "data/holdout_scores_wide.csv")
 write_csv(scores_long, "data/holdout_scores_long.csv")
 
+baseline <- 
+  baseline %>%
+  mutate(outcome = as_factor(outcome))
+
 scores_long %>%
   filter(variables == "human priors") %>%
   ggplot(aes(x = fct_rev(outcome), y = rel_mse, fill = fct_rev(data))) + 
@@ -148,9 +152,10 @@ holdout_v1 <-
   scores_long %>%
   mutate(data = fct_relevel(data, "mean imputation", "untyped OLS regression imputation"), 
          data = fct_relabel(data, function(x) str_replace(x, "regression imputation", "reg. imp."))) %>%
-  ggplot(aes(x = fct_rev(vars_and_scores), y = rel_mse, color = fct_rev(data))) + 
+  ggplot(aes(x = fct_rev(vars_and_scores), y = mse, color = fct_rev(data))) + 
   facet_wrap(~ outcome, ncol = 2, scales = "free_x", dir = "v") +
-  geom_hline(yintercept = 0) +
+  # geom_hline(yintercept = 0) +
+  geom_hline(aes(yintercept = baseline), data = baseline) +
   scale_color_brewer(type = "qual", palette = "Set1") +
   geom_point() + 
   coord_flip() + 
@@ -158,9 +163,12 @@ holdout_v1 <-
   guides(color = guide_legend(reverse = TRUE)) +
   labs(color = NULL, 
        x = NULL, 
-       y = "Out-of-sample MSE - baseline, from holdout data", 
-       title = "Mean Squared Error relative to Baseline") + 
-  theme(panel.spacing.x = unit(3, "lines"))
+       y = "Out-of-sample MSE from holdout data", 
+       title = "Mean Squared Error relative to Baseline", 
+       subtitle = "The baseline for each outcome is shown as a black line. Outcomes are on different scales.") + 
+  theme(panel.spacing.x = unit(3, "lines"), 
+        strip.text = element_text(size = rel(1)), 
+        plot.title = element_text(size = rel(1.5)))
 
 ggsave(filename = file.path("output", "holdout_v1.png"), 
        plot = holdout_v1, 
@@ -176,7 +184,7 @@ holdout_v2 <-
   scale_color_brewer(type = "qual", palette = "Dark2") +
   geom_point() + 
   coord_flip() + 
-  theme_minimal() + 
+  theme_minimal(base_family = "CM Roman") + 
   guides(color = guide_legend(reverse = TRUE)) +
   labs(color = "Variables and priors", 
        x = NULL, 
