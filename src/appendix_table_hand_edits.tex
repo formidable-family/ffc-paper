@@ -1,0 +1,68 @@
+% VERSION 1: TOO WIDE
+
+\begin{tabular}{l|l|rrr|rrr}
+\toprule
+\textbf{\pbox{25cm}{Variables \\ and Priors}} & \textbf{\pbox{25cm}{Imputation \\ Strategy}}          & \textbf{GPA}        & \textbf{Grit} & \textbf{\pbox{25cm}{Material \\ Hardship}}       & \textbf{Eviction} & \textbf{Layoff}      & \textbf{\pbox{25cm}{Job \\ Training}} \\
+\midrule
+all & mean imputation & 0.3521172 & 0.2471237 & 0.0198636 & 0.0547872 & 0.1648464 & 0.1773314\\
+all & typed OLS reg. imp. & 0.3551449 & 0.2445342 & 0.0199982 & 0.0545358 & 0.1653687 & 0.1778877\\
+all & typed LASSO reg. imp. & 0.3586823 & 0.2453336 & 0.0203282 & 0.0543499 & 0.1672237 & 0.1794731\\
+constructed & amelia & 0.3760876 & 0.2480050 & 0.0226894 & 0.0547501 & 0.1627320 & 0.1825718\\
+constructed & typed OLS reg. imp. & 0.3763566 & 0.2495417 & 0.0228130 & 0.0554579 & 0.1635424 & 0.1817545\\
+constructed & typed LASSO reg. imp. & 0.3802835 & 0.2516055 & 0.0235547 & 0.0554579 & 0.1661602 & 0.1840099\\
+human priors & mean imputation & 0.3658069 & 0.2507312 & 0.0226894 & 0.0550372 & 0.1649659 & 0.1845640\\
+human priors & untyped OLS reg. imp. & 0.3717770 & 0.2504286 & 0.0230012 & 0.0554178 & 0.1657949 & 0.1833662\\
+human priors & typed OLS reg. imp. & 0.3638654 & 0.2506158 & 0.0226243 & 0.0549218 & 0.1646336 & 0.1850885\\
+human priors & typed LASSO reg. imp. & 0.3721359 & 0.2516760 & 0.0240666 & 0.0553980 & 0.1667629 & 0.1831515\\
+human priors & amelia & 0.3644835 & 0.2506136 & 0.0225286 & 0.0547313 & 0.1644259 & 0.1826942\\
+hp + expert scores & mean imputation & 0.3659785 & 0.2535837 & 0.0226822 & 0.0550357 & 0.1642635 & 0.1825391\\
+hp + expert scores & untyped OLS reg. imp. & 0.3733817 & 0.2533379 & 0.0230771 & 0.0550177 & 0.1641666 & 0.1822220\\
+hp + expert scores & typed OLS reg. imp. & 0.3632547 & 0.2530869 & 0.0226253 & 0.0549201 & 0.1648977 & 0.1824330\\
+hp + expert scores & typed LASSO reg. imp. & 0.3779491 & 0.2533388 & 0.0249060 & 0.0554579 & 0.1672237 & 0.1824611\\
+hp + expert scores & amelia & 0.3641781 & 0.2522011 & 0.0226424 & 0.0544955 & 0.1636788 & 0.1816802\\
+hp + mturk scores & mean imputation & 0.3708433 & 0.2509057 & 0.0228178 & 0.0548276 & 0.1645926 & 0.1838115\\
+hp + mturk scores & untyped OLS reg. imp. & 0.3804294 & 0.2504986 & 0.0231550 & 0.0554579 & 0.1656144 & 0.1819769\\
+hp + mturk scores & typed OLS reg. imp. & 0.3643914 & 0.2509415 & 0.0226374 & 0.0546757 & 0.1642861 & 0.1830567\\
+hp + mturk scores & typed LASSO reg. imp. & 0.3728584 & 0.2537403 & 0.0247859 & 0.0554579 & 0.1670009 & 0.1821749\\
+hp + mturk scores & amelia & 0.3699685 & 0.2497986 & 0.0225918 & 0.0546857 & 0.1642820 & 0.1813055\\
+Bayesian rule set & untyped OLS reg. imp. & 0.4251489 & 0.2529836 & 0.0249056 & 0.0554579 & 0.1672237 & 0.2137921\\
+brs + expert scores & untyped OLS reg. imp. & 0.4251489 & 0.2529836 & 0.0249056 & 0.0554579 & 0.1672237 & 0.2137921\\
+\bottomrule
+\end{tabular}
+
+% VERSION 2: MORE ABBREVIATED
+
+\begin{table}[ht]
+\centering
+\caption{Complete set of prediction outcomes for each strategy}
+\label{tab:completeresults}
+\begin{tabular}{l|l|rrr|rrr}
+\toprule
+\textbf{\pbox{25cm}{Variables \\ and Priors}} & \textbf{\pbox{25cm}{Imputation \\ Strategy}}          & \textbf{GPA}        & \textbf{Grit} & \textbf{\pbox{25cm}{Matl. \\ Hdshp.}}       & \textbf{Evict.} & \textbf{Layoff}      & \textbf{\pbox{25cm}{Job \\ Trn.}} \\
+\midrule
+all & mean imp. & 0.3521 & 0.2471 & 0.0199 & 0.0548 & 0.1648 & 0.1773\\
+all & typed OLS & 0.3551 & 0.2445 & 0.0200 & 0.0545 & 0.1654 & 0.1779\\
+all & typed LASSO & 0.3587 & 0.2453 & 0.0203 & 0.0543 & 0.1672 & 0.1795\\
+constructed & amelia & 0.3761 & 0.2480 & 0.0227 & 0.0548 & 0.1627 & 0.1826\\
+constructed & typed OLS & 0.3764 & 0.2495 & 0.0228 & 0.0555 & 0.1635 & 0.1818\\
+constructed & typed LASSO & 0.3803 & 0.2516 & 0.0236 & 0.0555 & 0.1662 & 0.1840\\
+human priors & mean imp. & 0.3658 & 0.2507 & 0.0227 & 0.0550 & 0.1650 & 0.1846\\
+human priors & untyped OLS & 0.3718 & 0.2504 & 0.0230 & 0.0554 & 0.1658 & 0.1834\\
+human priors & typed OLS & 0.3639 & 0.2506 & 0.0226 & 0.0549 & 0.1646 & 0.1851\\
+human priors & typed LASSO & 0.3721 & 0.2517 & 0.0241 & 0.0554 & 0.1668 & 0.1832\\
+human priors & amelia & 0.3645 & 0.2506 & 0.0225 & 0.0547 & 0.1644 & 0.1827\\
+hp + expert & mean imp. & 0.3660 & 0.2536 & 0.0227 & 0.0550 & 0.1643 & 0.1825\\
+hp + expert & untyped OLS & 0.3734 & 0.2533 & 0.0231 & 0.0550 & 0.1642 & 0.1822\\
+hp + expert & typed OLS & 0.3633 & 0.2531 & 0.0226 & 0.0549 & 0.1649 & 0.1824\\
+hp + expert & typed LASSO & 0.3779 & 0.2533 & 0.0249 & 0.0555 & 0.1672 & 0.1825\\
+hp + expert & amelia & 0.3642 & 0.2522 & 0.0226 & 0.0545 & 0.1637 & 0.1817\\
+hp + mturk & mean imp. & 0.3708 & 0.2509 & 0.0228 & 0.0548 & 0.1646 & 0.1838\\
+hp + mturk & untyped OLS & 0.3804 & 0.2505 & 0.0232 & 0.0555 & 0.1656 & 0.1820\\
+hp + mturk & typed OLS & 0.3644 & 0.2509 & 0.0226 & 0.0547 & 0.1643 & 0.1831\\
+hp + mturk & typed LASSO & 0.3729 & 0.2537 & 0.0248 & 0.0555 & 0.1670 & 0.1822\\
+hp + mturk & amelia & 0.3700 & 0.2498 & 0.0226 & 0.0547 & 0.1643 & 0.1813\\
+brs & untyped OLS & 0.4251 & 0.2530 & 0.0249 & 0.0555 & 0.1672 & 0.2138\\
+brs + expert & untyped OLS & 0.4251 & 0.2530 & 0.0249 & 0.0555 & 0.1672 & 0.2138\\
+\bottomrule
+\end{tabular}
+\end{table}
